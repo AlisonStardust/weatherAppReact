@@ -31,7 +31,8 @@ componentDidMount() {
             <p class="print" id="country"></p>
           </div>
           <div class="app--section">Date and Time:
-            <p class="print" id="current">x</p>
+            <p class="print" id="current">
+            {(new Date()).toString()}</p>
           </div>
           <div class="app--section">Temperature:
             <p class="print" id="temp">{this.state.temperature}</p>
